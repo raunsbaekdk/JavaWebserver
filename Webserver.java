@@ -41,19 +41,19 @@ public class Webserver
 		}
 	}
 
-	public String ContentType(String docuname)
+	public String ContentType(String file)
 	{
-		if(docuname.endsWith(".html")) {
+		if(file.endsWith(".html")) {
 			return "text/html";
-		} else if (docuname.endsWith(".gif")) {
+		} else if (file.endsWith(".gif")) {
 			return "image/gif";
-		} else if (docuname.endsWith(".png")) {
+		} else if (file.endsWith(".png")) {
 			return "image/png";
-		} else if (docuname.endsWith(".jpg") || docuname.endsWith(".jpeg")) {
+		} else if (file.endsWith(".jpg") || file.endsWith(".jpeg")) {
 			return "image/jpg";
-		} else if (docuname.endsWith(".js")) {
+		} else if (file.endsWith(".js")) {
 			return "text/javascript";
-		} else if (docuname.endsWith(".css")) {
+		} else if (file.endsWith(".css")) {
 			return "text/css";
 		} else {
 			return "text/plain";
